@@ -17,15 +17,15 @@ class NFWebhookController extends Controller
      */
     public function indexAction()
     {
-    	/*
+    	
     	$fs = new Filesystem();	
     	$dt= date('Y-m-d H:i:s');
     	$data = json_decode(file_get_contents('php://input'));
+		//$fs->touch('hook.log');
+    	$fs->dumpFile( 'hook.log', $dt);
+		$fs->dumpFile( 'hook.log', $data);	
 
-    	$fs->appendToFile( 'tmp/hook.log', $dt);
-		$fs->appendToFile( 'tmp/hook.log', $data);	
-
-    	*/
+    	/*
     	$f = fopen('tmp/hook.log', 'a+');
     	$date= date('Y-m-d H:i:s');
     	fwrite($f, "---------  DATETIME: $d -----------\n");
@@ -33,7 +33,7 @@ class NFWebhookController extends Controller
     	fwrite($f, print_r($data, true));
     	fclose($f);
         fwrite($f, "------------- END -----------\n");
-       
+       */
         return $this->render('NFIntegrationnformBundle:Default:index.html.twig');
     }
 }
