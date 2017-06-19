@@ -20,13 +20,13 @@ class NFWebhookController extends Controller
     {
     	
     	$fs = new Filesystem();	
-    	$dt= date('Y-m-d H:i:s');
+    	//$dt= date('Y-m-d H:i:s');
     	//$data = json_decode(file_get_contents('php://input'));
 		//$fs->touch('hook.log');
 
 		$data= $request->get('documentNumber');
 		$file = $request->get('files');
-    	$fs->dumpFile( 'tmp/hook.log', $dt);
+    	//$fs->dumpFile( 'tmp/hook.log', $dt);
 		$fs->dumpFile( 'tmp/hook.log', $data);	
 		$fs->dumpFile( 'tmp/hook.log', $file);	
 
