@@ -22,8 +22,8 @@ class NFWebhookController extends Controller
     	$dt= date('Y-m-d H:i:s');
     	$data = json_decode(file_get_contents('php://input'));
 		//$fs->touch('hook.log');
-    	$fs->dumpFile( 'hook.log', $dt);
-		$fs->dumpFile( 'hook.log', $data);	
+    	$fs->dumpFile( 'tmp/hook.log', $dt);
+		$fs->dumpFile( 'tmp/hook.log', $data);	
 
     	/*
     	$f = fopen('tmp/hook.log', 'a+');
