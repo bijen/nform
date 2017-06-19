@@ -1,0 +1,3 @@
+nfhook:
+    pattern: /nfhook/
+    defaults: { _controller: NFIntegrationnformBundle:NFWebhook:index }
