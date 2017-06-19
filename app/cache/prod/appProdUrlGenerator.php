@@ -23,7 +23,7 @@ class appProdUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerat
         $this->logger = $logger;
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
-        'nfintegration_nform_nfwebhook_index' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NFIntegration\\nformBundle\\Controller\\NFWebhookController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/nfhook/nfhook/',    ),  ),  4 =>   array (  ),),
+        'nfhook' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NFIntegration\\nformBundle\\Controller\\NFWebhookController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/nfhook/',    ),  ),  4 =>   array (  ),),
     );
         }
     }

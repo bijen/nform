@@ -41,6 +41,7 @@ class ComposerStaticInitedd11cb7c31a1b5e834090e815a1eca8
         array (
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
         ),
     );
 
@@ -76,6 +77,10 @@ class ComposerStaticInitedd11cb7c31a1b5e834090e815a1eca8
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
     );
 
@@ -120,11 +125,11 @@ class ComposerStaticInitedd11cb7c31a1b5e834090e815a1eca8
         ),
         'D' => 
         array (
-            'Doctrine\\ORM' => 
+            'Doctrine\\ORM\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/orm/lib',
             ),
-            'Doctrine\\DBAL' => 
+            'Doctrine\\DBAL\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
             ),
@@ -139,10 +144,6 @@ class ComposerStaticInitedd11cb7c31a1b5e834090e815a1eca8
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
-            ),
-            'Doctrine\\Common\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/common/lib',
             ),
             'Doctrine\\Bundle\\DoctrineBundle' => 
             array (

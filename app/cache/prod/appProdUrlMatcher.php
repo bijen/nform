@@ -25,13 +25,13 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
-        // nfintegration_nform_nfwebhook_index
-        if (rtrim($pathinfo, '/') === '/nfhook/nfhook') {
+        // nfhook
+        if (rtrim($pathinfo, '/') === '/nfhook') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'nfintegration_nform_nfwebhook_index');
+                return $this->redirect($pathinfo.'/', 'nfhook');
             }
 
-            return array (  '_controller' => 'NFIntegration\\nformBundle\\Controller\\NFWebhookController::indexAction',  '_route' => 'nfintegration_nform_nfwebhook_index',);
+            return array (  '_controller' => 'NFIntegration\\nformBundle\\Controller\\NFWebhookController::indexAction',  '_route' => 'nfhook',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
