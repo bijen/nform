@@ -16,7 +16,7 @@ class NFWebhookController extends Controller
     {
 
     	
-    	$f = fopen('/Applications/MAMP/htdocs/bijen/tmp/hook.log', 'a+');
+    	$f = fopen('/tmp/hook.log', 'a+');
     	$d = date('Y-m-d H:i:s');
 
     	$data = json_decode(file_get_contents('php://input'));
